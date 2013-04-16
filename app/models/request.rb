@@ -1,3 +1,4 @@
 class Request < ActiveRecord::Base
-  # attr_accessible :title, :body
+  #eval("attr_accessible #{column_names.map { |cn| cn.to_sym }.to_s.gsub(/\[|\]/,"")}")
+  attr_accessible *column_names
 end

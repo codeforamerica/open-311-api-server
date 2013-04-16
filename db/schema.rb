@@ -14,8 +14,15 @@
 ActiveRecord::Schema.define(:version => 20130404060228) do
 
   create_table "requests", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "service_request_id"
+    t.string   "status"
+    t.string   "service_name"
+    t.string   "service_code"
+    t.string   "description"
+    t.string   "requested_datetime"
+    t.string   "updated_datetime"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
 end
