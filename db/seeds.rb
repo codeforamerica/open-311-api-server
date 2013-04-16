@@ -6,4 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Request.create! service_request_id: "1234", status: "open", service_name: "garbage", service_code: "GARB", description: "someone left shit on my lawn", requested_datetime: "1/2/12 00:00:00".to_datetime
+Request.create! service_request_id: "1234", status: "open", service_name: "garbage", service_code: "GARB", description: "someone left shit on my lawn", requested_datetime: "2013-04-01 10:48".to_datetime
