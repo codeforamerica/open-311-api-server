@@ -17,7 +17,7 @@ class RequestsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @request }
+      format.json { render json: @request, include: :notes }
     end
   end
 

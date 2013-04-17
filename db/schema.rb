@@ -11,18 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404060228) do
+ActiveRecord::Schema.define(:version => 20130417155546) do
+
+  create_table "notes", :force => true do |t|
+    t.datetime "datetime"
+    t.string   "summary"
+    t.string   "type"
+    t.integer  "request_id"
+  end
 
   create_table "requests", :force => true do |t|
-    t.string   "service_request_id"
-    t.string   "status"
-    t.string   "service_name"
-    t.string   "service_code"
-    t.string   "description"
-    t.string   "requested_datetime"
-    t.string   "updated_datetime"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.string "service_request_id"
+    t.string "status"
+    t.string "service_name"
+    t.string "service_code"
+    t.string "description"
+    t.string "requested_datetime"
+    t.string "updated_datetime"
   end
 
 end

@@ -8,8 +8,8 @@ class CreateRequests < ActiveRecord::Migration
       t.string :description
       t.string :requested_datetime
       t.string :updated_datetime
-
-      t.timestamps
+      # Don't use timestamps for now; stick to strict 311 spec
+      #t.timestamps
     end
   end
 end
