@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20130417155546) do
     t.integer  "request_id"
   end
 
-  create_table "requests", :force => true do |t|
+  create_table "requests", :id => false, :force => true do |t|
     t.string "service_request_id"
     t.string "status"
     t.string "service_name"

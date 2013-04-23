@@ -1,6 +1,6 @@
 class CreateRequests < ActiveRecord::Migration
   def change
-    create_table :requests do |t|
+    create_table :requests, { id: false } do |t|
       t.string :service_request_id
       t.string :status
       t.string :service_name

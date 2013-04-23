@@ -13,7 +13,8 @@ class RequestsController < ApplicationController
   # GET /requests/1
   # GET /requests/1.json
   def show
-    @request = Request.find_by_service_request_id(params[:id])
+    #@request = Request.find_by_service_request_id(params[:id])
+    @request = Request.find params[:id]
 
     respond_to do |format|
       format.html # show.html.erb
