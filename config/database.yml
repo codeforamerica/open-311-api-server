@@ -13,8 +13,9 @@ development:
   <<: *common
   database: open_311_server_development
 
-#etl_execution:
-#  adapter: 
+etl_execution:
+  <<: *common
+  database: aw_etl_execution
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

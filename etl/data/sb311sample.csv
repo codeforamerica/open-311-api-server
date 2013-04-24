@@ -1,0 +1,100 @@
+"Call ID","Call Status","Call Type Code","Call Type Description","Entry Date - Calc","Entry Time - Calc","Action Taken Description","Close Date - Calc","Close Time - Calc","Elapsed Time"
+501634,"1","STLT","Street Light Outage",2013-04-17,"12:47","Sent to AEP",,"0:",0
+501784,"1","STLT","Street Light Outage",2013-04-17,"13:27","Sent to AEP",,"0:",0
+500562,"1","ACDS","WW - Account Discoveries",2013-04-17,"8:09","Forwarded to another user",,"0:",0
+500617,"3","COMP","SW Trash Complaints",2013-04-17,"8:29","Forwarded to another user",2013-04-17,"9:07",39
+500871,"1","TPR","Tree Permit Request",2013-04-17,"9:30","Forwarded to another user",,"0:",0
+500898,"1","ACDS","WW - Account Discoveries",2013-04-17,"9:35","Forwarded to another user",,"0:",0
+500967,"1","SAD","SW Same Day Trash Miss",2013-04-17,"9:59","Forwarded to another user",,"0:",0
+501216,"3","ORD","Code Ordinance Violation",2013-04-17,"11:01","Forwarded to another user",2013-04-17,"11:25",24
+501226,"3","ORD","Code Ordinance Violation",2013-04-17,"11:06","Forwarded to another user",2013-04-17,"11:25",19
+501240,"1","ORD","Code Ordinance Violation",2013-04-17,"11:08","Forwarded to another user",,"0:",0
+501251,"3","COMP","SW Trash Complaints",2013-04-17,"11:10","Forwarded to another user",2013-04-17,"11:20",10
+501508,"1","SAD","SW Same Day Trash Miss",2013-04-17,"12:11","Forwarded to another user",,"0:",0
+501562,"1","SAD","SW Same Day Trash Miss",2013-04-17,"12:23","Forwarded to another user",,"0:",0
+501776,"1","COMP","SW Trash Complaints",2013-04-17,"13:25","Forwarded to another user",,"0:",0
+500535,"3","BILL","WW - Billing inquiry",2013-04-17,"7:33","Information given to customer",2013-04-17,"7:39",6
+500556,"3","BILL","WW - Billing inquiry",2013-04-17,"8:05","Information given to customer",2013-04-17,"8:06",1
+500564,"3","SOLI","SW Solid Waste Misc",2013-04-17,"8:09","Information given to customer",2013-04-17,"8:10",1
+500548,"3","SOLI","SW Solid Waste Misc",2013-04-17,"7:57","Information given to customer",2013-04-17,"8:10",13
+500560,"3","BILL","WW - Billing inquiry",2013-04-17,"8:08","Information given to customer",2013-04-17,"8:11",3
+500570,"3","WATE","WW - Water Works Misc",2013-04-17,"8:10","Information given to customer",2013-04-17,"8:13",2
+500582,"3","ALGR","Alley Grading",2013-04-17,"8:16","Information given to customer",2013-04-17,"8:18",2
+500578,"3","WATE","WW - Water Works Misc",2013-04-17,"8:13","Information given to customer",2013-04-17,"8:18",6
+500576,"3","BILL","WW - Billing inquiry",2013-04-17,"8:13","Information given to customer",2013-04-17,"8:24",11
+500609,"3","WATE","WW - Water Works Misc",2013-04-17,"8:27","Information given to customer",2013-04-17,"8:29",2
+500607,"3","BILL","WW - Billing inquiry",2013-04-17,"8:26","Information given to customer",2013-04-17,"8:29",3
+500615,"3","BILL","WW - Billing inquiry",2013-04-17,"8:28","Information given to customer",2013-04-17,"8:29",1
+500613,"3","BILL","WW - Billing inquiry",2013-04-17,"8:28","Information given to customer",2013-04-17,"8:32",4
+500634,"3","SOLI","SW Solid Waste Misc",2013-04-17,"8:31","Information given to customer",2013-04-17,"8:33",2
+500630,"3","BILL","WW - Billing inquiry",2013-04-17,"8:30","Information given to customer",2013-04-17,"8:34",3
+500648,"3","BILL","WW - Billing inquiry",2013-04-17,"8:33","Information given to customer",2013-04-17,"8:34",1
+500640,"3","BILL","WW - Billing inquiry",2013-04-17,"8:33","Information given to customer",2013-04-17,"8:36",3
+500646,"3","BILL","WW - Billing inquiry",2013-04-17,"8:33","Information given to customer",2013-04-17,"8:36",3
+500658,"3","BILL","WW - Billing inquiry",2013-04-17,"8:35","Information given to customer",2013-04-17,"8:36",2
+500675,"3","RECY","Recycling Info",2013-04-17,"8:36","Information given to customer",2013-04-17,"8:37",1
+500680,"3","BILL","WW - Billing inquiry",2013-04-17,"8:38","Information given to customer",2013-04-17,"8:39",1
+500686,"3","MISC","Miscellaneous City Info",2013-04-17,"8:38","Information given to customer",2013-04-17,"8:40",2
+500691,"3","WATE","WW - Water Works Misc",2013-04-17,"8:38","Information given to customer",2013-04-17,"8:40",1
+500662,"3","STRE","Street Department Misc.",2013-04-17,"8:36","Information given to customer",2013-04-17,"8:41",5
+500695,"3","BILL","WW - Billing inquiry",2013-04-17,"8:39","Information given to customer",2013-04-17,"8:41",2
+500699,"3","RECY","Recycling Info",2013-04-17,"8:40","Information given to customer",2013-04-17,"8:42",2
+500717,"3","SOLI","SW Solid Waste Misc",2013-04-17,"8:42","Information given to customer",2013-04-17,"8:49",7
+500735,"3","SOLI","SW Solid Waste Misc",2013-04-17,"8:49","Information given to customer",2013-04-17,"8:49",1
+500733,"3","MISC","Miscellaneous City Info",2013-04-17,"8:48","Information given to customer",2013-04-17,"8:50",2
+500724,"3","BILL","WW - Billing inquiry",2013-04-17,"8:45","Information given to customer",2013-04-17,"8:52",7
+500751,"3","BILL","WW - Billing inquiry",2013-04-17,"8:52","Information given to customer",2013-04-17,"8:53",1
+500755,"3","MISC","Miscellaneous City Info",2013-04-17,"8:52","Information given to customer",2013-04-17,"8:53",1
+500739,"3","BILL","WW - Billing inquiry",2013-04-17,"8:49","Information given to customer",2013-04-17,"8:53",4
+500757,"3","BILL","WW - Billing inquiry",2013-04-17,"8:52","Information given to customer",2013-04-17,"8:54",1
+500770,"3","SOLI","SW Solid Waste Misc",2013-04-17,"8:54","Information given to customer",2013-04-17,"8:55",1
+500774,"3","BILL","WW - Billing inquiry",2013-04-17,"8:56","Information given to customer",2013-04-17,"8:57",1
+500726,"3","BILL","WW - Billing inquiry",2013-04-17,"8:45","Information given to customer",2013-04-17,"8:58",14
+500778,"3","SOLI","SW Solid Waste Misc",2013-04-17,"8:56","Information given to customer",2013-04-17,"8:59",2
+500812,"3","MISC","Miscellaneous City Info",2013-04-17,"9:04","Information given to customer",2013-04-17,"9:04",1
+500821,"3","WATE","WW - Water Works Misc",2013-04-17,"9:05","Information given to customer",2013-04-17,"9:10",6
+500786,"3","BILL","WW - Billing inquiry",2013-04-17,"8:58","Information given to customer",2013-04-17,"9:11",13
+500836,"3","WATE","WW - Water Works Misc",2013-04-17,"9:10","Information given to customer",2013-04-17,"9:12",1
+500780,"3","SOLI","SW Solid Waste Misc",2013-04-17,"8:57","Information given to customer",2013-04-17,"9:19",22
+500857,"3","BILL","WW - Billing inquiry",2013-04-17,"9:15","Information given to customer",2013-04-17,"9:33",17
+500877,"3","SOLI","SW Solid Waste Misc",2013-04-17,"9:33","Information given to customer",2013-04-17,"9:34",2
+500892,"3","SOLI","SW Solid Waste Misc",2013-04-17,"9:35","Information given to customer",2013-04-17,"9:35",1
+500882,"3","BILL","WW - Billing inquiry",2013-04-17,"9:33","Information given to customer",2013-04-17,"9:35",2
+500890,"3","BILL","WW - Billing inquiry",2013-04-17,"9:34","Information given to customer",2013-04-17,"9:36",2
+500907,"3","MISC","Miscellaneous City Info",2013-04-17,"9:37","Information given to customer",2013-04-17,"9:37",1
+500761,"3","BILL","WW - Billing inquiry",2013-04-17,"8:53","Information given to customer",2013-04-17,"9:43",50
+500902,"3","WATE","WW - Water Works Misc",2013-04-17,"9:36","Information given to customer",2013-04-17,"9:43",7
+500922,"3","BILL","WW - Billing inquiry",2013-04-17,"9:44","Information given to customer",2013-04-17,"9:46",2
+500917,"3","WATE","WW - Water Works Misc",2013-04-17,"9:43","Information given to customer",2013-04-17,"9:46",3
+500913,"3","MISC","Miscellaneous City Info",2013-04-17,"9:43","Information given to customer",2013-04-17,"9:47",4
+500937,"3","ENG","Engineering Misc",2013-04-17,"9:49","Information given to customer",2013-04-17,"9:50",1
+500928,"3","MISC","Miscellaneous City Info",2013-04-17,"9:46","Information given to customer",2013-04-17,"9:50",4
+500838,"3","BILL","WW - Billing inquiry",2013-04-17,"9:11","Information given to customer",2013-04-17,"9:50",39
+500933,"3","SOLI","SW Solid Waste Misc",2013-04-17,"9:47","Information given to customer",2013-04-17,"9:51",4
+500945,"3","BILL","WW - Billing inquiry",2013-04-17,"9:50","Information given to customer",2013-04-17,"9:53",3
+500947,"3","BILL","WW - Billing inquiry",2013-04-17,"9:51","Information given to customer",2013-04-17,"9:55",4
+500961,"3","MISC","Miscellaneous City Info",2013-04-17,"9:56","Information given to customer",2013-04-17,"9:56",1
+500969,"3","SOLI","SW Solid Waste Misc",2013-04-17,"9:59","Information given to customer",2013-04-17,"9:59",1
+500951,"3","BILL","WW - Billing inquiry",2013-04-17,"9:52","Information given to customer",2013-04-17,"10:03",11
+500988,"3","BILL","WW - Billing inquiry",2013-04-17,"10:04","Information given to customer",2013-04-17,"10:04",1
+500986,"3","BILL","WW - Billing inquiry",2013-04-17,"10:03","Information given to customer",2013-04-17,"10:08",5
+500997,"3","WATE","WW - Water Works Misc",2013-04-17,"10:05","Information given to customer",2013-04-17,"10:09",4
+500991,"3","BILL","WW - Billing inquiry",2013-04-17,"10:04","Information given to customer",2013-04-17,"10:09",4
+500973,"3","ENG","Engineering Misc",2013-04-17,"10:00","Information given to customer",2013-04-17,"10:10",10
+501020,"3","SOLI","SW Solid Waste Misc",2013-04-17,"10:10","Information given to customer",2013-04-17,"10:11",1
+501005,"3","BILL","WW - Billing inquiry",2013-04-17,"10:07","Information given to customer",2013-04-17,"10:11",4
+501030,"3","BILL","WW - Billing inquiry",2013-04-17,"10:11","Information given to customer",2013-04-17,"10:12",1
+501028,"3","SOLI","SW Solid Waste Misc",2013-04-17,"10:11","Information given to customer",2013-04-17,"10:13",3
+501035,"3","BILL","WW - Billing inquiry",2013-04-17,"10:12","Information given to customer",2013-04-17,"10:15",2
+501043,"3","BILL","WW - Billing inquiry",2013-04-17,"10:13","Information given to customer",2013-04-17,"10:15",2
+501039,"3","BILL","WW - Billing inquiry",2013-04-17,"10:13","Information given to customer",2013-04-17,"10:16",4
+501072,"3","BILL","WW - Billing inquiry",2013-04-17,"10:21","Information given to customer",2013-04-17,"10:21",1
+501078,"3","BILL","WW - Billing inquiry",2013-04-17,"10:21","Information given to customer",2013-04-17,"10:24",2
+501089,"3","BILL","WW - Billing inquiry",2013-04-17,"10:24","Information given to customer",2013-04-17,"10:25",1
+501066,"3","BILL","WW - Billing inquiry",2013-04-17,"10:19","Information given to customer",2013-04-17,"10:25",6
+501095,"3","BILL","WW - Billing inquiry",2013-04-17,"10:26","Information given to customer",2013-04-17,"10:27",1
+501101,"3","SOLI","SW Solid Waste Misc",2013-04-17,"10:28","Information given to customer",2013-04-17,"10:30",2
+501085,"3","BILL","WW - Billing inquiry",2013-04-17,"10:23","Information given to customer",2013-04-17,"10:32",8
+501047,"3","SOLI","SW Solid Waste Misc",2013-04-17,"10:13","Information given to customer",2013-04-17,"10:35",22
+501113,"3","BILL","WW - Billing inquiry",2013-04-17,"10:34","Information given to customer",2013-04-17,"10:35",1
+501122,"3","BILL","WW - Billing inquiry",2013-04-17,"10:36","Information given to customer",2013-04-17,"10:37",1

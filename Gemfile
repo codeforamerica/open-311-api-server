@@ -13,6 +13,7 @@ gem 'pg'
 gem 'rspec-rails'
 
 gem 'pry'
+gem 'activewarehouse-etl'
 
 # Gems used only for assets and not required
 # in production environments by default.
