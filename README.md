@@ -4,7 +4,7 @@ A simple Rails app to transform and serve service request data ("311 data") in t
 
 Getting Involved
 -----
-This app is in early alpha. To learn more or contribute, leave a comment on GitHub Issues or shoot a tweet over to Dave Guarino [@allafarce](https://twitter.com/allafarce)
+This app is in early alpha. To learn more or contribute, leave a comment on GitHub Issues or shoot a tweet over to Dave Guarino [@allafarce](https://twitter.com/allafarce).
 
 Copyright
 -----
