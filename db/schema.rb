@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(:version => 20130417155546) do
 
-  create_table "notes", :force => true do |t|
+  create_table "notes", :id => false, :force => true do |t|
     t.datetime "datetime"
     t.string   "summary"
     t.string   "type"

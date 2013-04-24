@@ -1,6 +1,6 @@
 class CreateNotes < ActiveRecord::Migration
   def change
-    create_table :notes do |t|
+    create_table :notes, { id: false } do |t|
       t.datetime :datetime
       t.string :summary
       t.string :type
