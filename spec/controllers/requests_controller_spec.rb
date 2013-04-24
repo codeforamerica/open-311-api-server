@@ -45,7 +45,7 @@ describe RequestsController do
   describe "GET show" do
     it "assigns the requested request as @request" do
       request = Request.create! valid_attributes
-      get :show, {:id => request.to_param}, valid_session
+      get :show, {:id => request.service_request_id}, valid_session
       assigns(:request).should eq(request)
     end
   end
