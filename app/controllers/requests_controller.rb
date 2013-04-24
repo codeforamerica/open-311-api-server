@@ -2,7 +2,7 @@ class RequestsController < ApplicationController
   # GET /requests
   # GET /requests.json
   def index
-    @requests = Request.all
+    @requests = Request.all limit: 1000, order: "requested_datetime DESC"
 
     respond_to do |format|
       format.html # index.html.erb
