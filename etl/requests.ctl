@@ -1,46 +1,38 @@
+input_file_path = File.expand_path(File.dirname(__FILE__) + '/data/consolidated-attempt4-core-orderdate-limitafter072012.csv')
+requests_temp_file_path = '/tmp/processed_311_requests.txt'
 
-file = File.expand_path(File.dirname(__FILE__) + '/data/consolidated-attempt4-core-orderdate-limitafter072012.csv')
-requests_temp_file = '/tmp/processed_311_requests.txt'
+# Use symbolized column headers from the CSV itself, for flexibility if dump structure changes
+input_column_headers = CSV.parse(File.open(input_file_path).first)[0]
+input_column_headers.map! { |col_name| col_name.to_sym }
 
 source :input,
   {
-    file: file,
+    file: input_file_path,
     parser: :csv,
     skip_lines: 1
   },
-  [
-    :call_id,
-    :call_status,
-    :call_type_code,
-    :call_type_description,
-    :entry_date_calc,
-    :entry_time_calc,
-    :action_taken_description,
-    :close_date_calc,
-    :close_time_calc,
-    :elapsted_time
-  ]
+  input_column_headers 
 
 transform(:description) do |n,v,r|
   "test description"
 end
 
 transform(:call_status) do |n,v,r|
-  r[:call_status] == "3" ? "closed" : "open"
+  r[:"Call Status"] == "3" ? "closed" : "open"
 end
 
 transform(:requested_datetime) do |n,v,r|
-  date = r[:entry_date_calc] + " " + r[:entry_time_calc]
+  date = r[:"Entry Date - Calc"] + " " + r[:"Entry Time - Calc"]
   date.to_datetime.xmlschema
 end
 
 transform(:updated_datetime) do |n,v,r|
 =begin
-  if r[:close_date_calc] == nil
-    date = r[:entry_date_calc] + " " + r[:entry_time_calc]
+  if r[:"Close Date - Calc"] == nil
+    date = r[:"Entry Date - Calc"] + " " + r[:"Entry Time - Calc"]
     date.to_datetime.xmlschema
   else
-    date = r[:close_date_calc] + " " + r[:close_time_calc]
+    date = r[:"Close Date - Calc"] + " " + r[:"Close Time - Calc"]
     date.to_datetime.xmlschema
   end
 =end
@@ -48,14 +40,14 @@ transform(:updated_datetime) do |n,v,r|
 end
 
 destination :output_requests, {
-  file: requests_temp_file 
+  file: requests_temp_file_path 
 },
 {
-  order: [:call_id, :call_status, :call_type_description, :call_type_code, :description, :requested_datetime, :updated_datetime]
+  order: [:"Call ID", :call_status, :"Call Type Description", :"Call Type Code", :description, :requested_datetime, :updated_datetime]
 }
 
 post_process :bulk_import, {
-  file: requests_temp_file,
+  file: requests_temp_file_path,
   columns: [:service_request_id, :status, :service_name, :service_code, :description, :requested_datetime, :updated_datetime],
   target: :development,
   table: 'requests'
