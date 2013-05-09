@@ -1,5 +1,9 @@
+require 'active_support'
+require 'pry'
+
 ### Change this to point to your file
-input_file_path = File.expand_path('~/Workspace/All_311_Cases.csv')
+#input_file_path = File.expand_path('~/Workspace/All_311_Cases.csv')
+input_file_path = File.expand_path('~/Downloads/All_311_Cases.csv')
 
 # Do not change
 requests_temp_file_path = '/tmp/processed_311_requests.txt'
@@ -54,9 +58,12 @@ transform(:requested_datetime) do |n,v,r|
   ### Make sure you call .to_datetime.xmlschema at the end of whatever the value is to convert it to the right format
   ### as require by the Open311 spec
   # Example:
-  #r[:"CREATION_DATE"].to_datetime.xmlschema
-  clean_start_date = DateTime.strptime(r[:"CREATION_DATE"], '%d/%m/%Y %I:%M:%S %p')
-  clean_start_date.to_datetime.xmlschema
+  #r[:"CREATION_DATE"].xmlschema
+  begin
+    DateTime.strptime(r[:"CREATION_DATE"], '%m/%d/%Y %I:%N:%S %p').to_datetime.xmlschema
+  rescue
+    binding.pry
+  end
 end
 
 transform(:updated_datetime) do |n,v,r|
@@ -64,9 +71,8 @@ transform(:updated_datetime) do |n,v,r|
   ### Make sure you call .to_datetime.xmlschema at the end of whatever the value is to convert it to the right format
   ### as require by the Open311 spec
   # Example:
-  #r[:"CLOSED_DATE"].to_datetime.xmlschema
-  clean_end_date = DateTime.strptime(r[:"CLOSED_DATE"], '%d/%m/%Y %I:%M:%S %p')
-  clean_end_date.to_datetime.xmlschema
+  #r[:"CLOSED_DATE"].xmlschema
+  DateTime.strptime(r[:"CLOSED_DATE"], '%m/%d/%Y %I:%N:%S %p').to_datetime.xmlschema
 end
 
 
