@@ -3,7 +3,7 @@ require 'pry'
 
 ### Change this to point to your file
 #input_file_path = File.expand_path('~/Workspace/All_311_Cases.csv')
-input_file_path = File.expand_path('~/Downloads/All_311_Cases.csv')
+input_file_path = File.expand_path('~/Downloads/All_311_Cases-KC-shortDateRange-noLocation.csv')
 
 # Do not change
 requests_temp_file_path = '/tmp/processed_311_requests.txt'
@@ -59,11 +59,7 @@ transform(:requested_datetime) do |n,v,r|
   ### as require by the Open311 spec
   # Example:
   #r[:"CREATION_DATE"].xmlschema
-  begin
-    DateTime.strptime(r[:"CREATION_DATE"], '%m/%d/%Y %I:%N:%S %p').to_datetime.xmlschema
-  rescue
-    binding.pry
-  end
+  DateTime.strptime(r[:"CREATION_DATE"], '%m/%d/%Y %I:%N:%S %p').to_datetime.xmlschema
 end
 
 transform(:updated_datetime) do |n,v,r|
@@ -72,7 +68,11 @@ transform(:updated_datetime) do |n,v,r|
   ### as require by the Open311 spec
   # Example:
   #r[:"CLOSED_DATE"].xmlschema
-  DateTime.strptime(r[:"CLOSED_DATE"], '%m/%d/%Y %I:%N:%S %p').to_datetime.xmlschema
+  if r[:"CLOSED_DATE"] != nil
+    DateTime.strptime(r[:"CLOSED_DATE"], '%m/%d/%Y %I:%N:%S %p').to_datetime.xmlschema
+  else
+    ""
+  end
 end
 
 
